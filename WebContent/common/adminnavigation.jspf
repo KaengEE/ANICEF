@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+    <hr />
+    <div class="maintitle">
+      <h1><a href="adminindex.jsp" style="text-decoration: none;">🔒관리자페이지</a></h1>
+    </div>
+    <hr />
+    <!-- 네브바 -->
+<div class="row">
+    <div class="navigation col-3">
+      <nav>
+        <ul type="button" class="main1">
+          회원관리
+          <li class="sub1"><a href="infomation.jsp">공지사항</a></li>
+          <li class="sub1"><a href="userinfo.jsp">회원정보관리</a></li>
+        </ul>
+        <ul type="button">
+          <a href="qna.jsp">문의답변</a>
+        </ul type="button">
+        <ul>
+          <a href="adminbooking.jsp">예약현황</a>
+        </ul>
+        <ul type="button" class="main2">
+          주문관리
+          <li class="sub2" ><a href="#">주문정보확인</a></li>
+          <li class="sub2" ><a href="#">고객배송현황</a></li>
+        </ul>
+        <ul type="button" class="main3">
+        	동물/상품관리
+          <li class="sub3"><a href="animalAdm.jsp">동물관리</a></li>
+          <li class="sub3"><a href="addAnimal.jsp">동물 등록</a></li>
+          <li class="sub3"><a href="addProduct.jsp">상품 등록</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container col-8">

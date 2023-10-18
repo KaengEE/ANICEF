@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* 네브바 */
+a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: rgb(108, 108, 108);
+  font-family: "Lilita One", cursive;
+}
+
+.navbar_logo i {
+  color: rgb(0, 0, 0);
+  font-family: "Font AWESOME 6 Free";
+  font-weight: 900;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.navbar_menu > li:hover {
+  color: rgb(137, 135, 135);
+  background-color: rgb(227, 227, 227);
+}
+
+.navbar_menu li {
+  padding: 8px 20px;
+}
+.navbar_icons {
+  font-family: "Font AWESOME 6 Free";
+  font-weight: 900;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+input {
+  margin: 0;
+  padding: 0;
+}
+.navbar_icons li {
+  padding: 8px 12px;
+  font-size: 18px;
+}
+
+/* 큰 화면에서는 숨김 */
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+}
+
+/* 네브바 종료 */
+
+/* main 컨텐츠  */
+.main {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.main_title {
+  width: 100%;
+  color: black;
+  top: 50px;
+  margin: 30px;
+}
+
+.main .main_content {
+  display: flex;
+  background-color: #ffffff;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  width: 70%;
+  height: 100%;
+  margin: 40px 0px;
+}
+
+.main_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 255, 255);
+  width: 220px;
+  height: 270px;
+  margin: 20px 40px 0px;
+}
+
+.main_list .list_image {
+  width: 220px;
+  background-color: bisque;
+  height: 220px;
+  overflow: hidden;
+}
+.list_image img,
+.list_imag a {
+  width: 220px;
+  height: 220px;
+}
+
+.main_list .list_name {
+  background-color: rgb(255, 255, 255);
+  width: 220px;
+  height: 50px;
+  text-align: center;
+}
+
+/* 푸터 */
+
+footer {
+  color: black;
+  background-color: #ffffff;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+
+footer h2 {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+footer p {
+  margin-left: 10%;
+}
+/* 푸터 종료 */
+
+/* 반응형 , 창이 작아지면 아래의 내용  */
+@media screen and (max-width: 768px) {
+  /* 네브바 */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+
+  /* 푸터 */
+  footer {
+    font-size: 15px;
+  }
+}

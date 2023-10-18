@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+
+	.navigation{
+	width: 600px;
+	position: fixed;
+	top: 250px;
+	left:0;
+	height: 100%;
+	overflow-y: auto;
+    float: left;
+    margin-right: 20px;
+    }
+    
+
+    nav {
+	  margin-left: 50px;
+	  margin-top: 50px; 
+	  margin-bottom: auto;
+    }
+
+    ul,
+    a {
+      color: black;
+    }
+
+    .main1:hover,
+    .main2:hover,
+    .main3:hover,
+    a:hover {
+      color: black;
+      font-weight: bold;
+    }
+
+    ul {
+      width: 200px;
+      height: auto;
+      margin: 0px;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      width: 150px;
+      margin-left: 3%;
+      padding: 0px;
+    }
+
+    #logout {
+      margin-top: 50px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: end;
+    }
+
+    .maintitle {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 50px;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    /* 푸터 스타일 */
+    footer {
+      text-align: center;
+      background-color: burlywood;
+      padding: 50px;
+      width: 100%;
+      position: absolute;
+      bottom: -40%;
+    }
+	
+    
+
+    nav {
+      margin-left: 50px;
+      margin-bottom:auto;
+    }
+
+    ul,
+    a {
+      color: black;
+    }
+
+    .main1:hover,
+    .main2:hover,
+    .main3:hover,
+    a:hover {
+      color: black;
+      font-weight: bold;
+    }
+
+    ul {
+      width: 200px;
+      height: auto;
+      margin: 0px;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      width: 150px;
+      margin-left: 3%;
+      padding: 0px;
+    }
+
+    #logout {
+      margin-top: 50px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: end;
+    }
+
+    .maintitle {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 50px;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    /* 푸터 스타일 */
+    footer {
+ 	  margin-top: 0px;
+      text-align: center;
+      background-color: burlywood;
+      padding: 50px;
+      width: 100%;
+      position: absolute;
+      bottom: -50%;
+      left:0;
+    }

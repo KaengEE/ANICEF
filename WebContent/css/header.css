@@ -1,0 +1,120 @@
+@import
+	url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap")
+	;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/* 네브바 */
+a {
+	text-decoration: none;
+	color: rgb(60, 60, 60);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	padding: 8px 12px;
+}
+
+.navbar_logo {
+	font-size: 24px;
+	color: rgb(108, 108, 108);
+	font-family: "Lilita One", cursive;
+}
+
+.navbar_logo i {
+	color: rgb(0, 0, 0);
+	font-family: "Font AWESOME 6 Free";
+	font-weight: 900;
+}
+
+.navbar_menu {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	font-weight: bold;
+}
+
+.navbar_menu>li:hover {
+	color: rgb(137, 135, 135);
+	background-color: rgb(227, 227, 227);
+}
+
+.navbar_menu li {
+	padding: 8px 20px;
+}
+
+.navbar_icons {
+	font-family: "Font AWESOME 6 Free";
+	font-weight: 900;
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+
+.nav_welcome_user {
+	padding: 8px 0px;
+	font-size: 12px
+}
+
+.nav_logout {
+	padding: 6px 8px;
+}
+
+.navbar_icons li {
+	padding: 8px 12px;
+	font-size: 18px;
+}
+
+/* 큰 화면에서는 숨김 */
+.navbar_toggleBtn {
+	display: none;
+	position: absolute;
+	right: 32px;
+	font-size: 20px;
+	color: rgb(100, 100, 100);
+}
+
+/* 네브바 종료 */
+@media screen and (max-width: 768px) {
+	/* 네브바 */
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 8px 24px;
+	}
+	.navbar_menu {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		display: none;
+	}
+	.navbar_menu li {
+		width: 100%;
+		text-align: center;
+	}
+	.navbar_icons {
+		justify-content: center;
+		width: 100%;
+		display: none;
+	}
+	.navbar_toggleBtn {
+		display: block;
+	}
+	.navbar_menu.active, .navbar_icons.active {
+		display: flex;
+	}
+}

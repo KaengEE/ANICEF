@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	</div>
+</div>
+    <footer>@푸터</footer>
+
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    
+        <script>
+      $(document).ready(function () {
+        $("li").hide();
+        // 열고닫기
+        $("ul.main1").click(function () {
+          $("li.sub1").toggle();
+        });
+        $("ul.main2").click(function () {
+          $("li.sub2").toggle();
+        });
+        $("ul.main3").click(function () {
+          $("li.sub3").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

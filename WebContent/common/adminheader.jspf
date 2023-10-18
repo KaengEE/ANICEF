@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관리자페이지</title>
+
+	<!-- 부트스트랩 -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!-- 폰트어썸 5.8버전 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+  <!-- css링크 -->
+  <link rel="stylesheet" href="./css/adminMain.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+  	<header>
+      <div id="logout">
+		<%
+  		//로그인안되어있으면 로그인페이지로 보냄
+		String adminID = null;
+		//관리자아이디가 있으면 가져옴
+		if (session.getAttribute("adminID") != null) {
+			adminID = (String)session.getAttribute("adminID");
+		}
+		if ( adminID == null) {
+			out.println("<script>");
+			out.println("alert('로그인을 하세요!')");
+			out.println("location.href = 'login.jsp'");
+			out.println("</script>");
+		}
+		%>
+		<div class="mr-3"><p><b>${adminID }</b> 님이 접속중입니다.</p></div>
+        <button type="button" class="btn btn-secondary" onclick="location.href='logoutAction.jsp'">로그아웃</button>
+      </div>
+    </header>
